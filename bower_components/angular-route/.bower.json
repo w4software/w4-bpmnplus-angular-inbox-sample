@@ -1,0 +1,19 @@
+{
+  "name": "angular-route",
+  "version": "1.4.0-build.3909+sha.d8492f4",
+  "main": "./angular-route.js",
+  "ignore": [],
+  "dependencies": {
+    "angular": "1.4.0-build.3909+sha.d8492f4"
+  },
+  "homepage": "https://github.com/angular/bower-angular-route",
+  "_release": "1.4.0-build.3909+sha.d8492f4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.4.0-build.3909+sha.d8492f4",
+    "commit": "cf372134d6f34b10820b7ab725e2641843694015"
+  },
+  "_source": "git://github.com/angular/bower-angular-route.git",
+  "_target": "1.4.x",
+  "_originalSource": "angular-route"
+}

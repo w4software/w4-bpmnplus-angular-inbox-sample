@@ -1,0 +1,14 @@
+{
+  "name": "w4bpmnplus-angular-inbox",
+  "description": "A small inbox sample for W4 BPMN+ with AngularJS",
+  "version": "0.0.0",
+  "homepage": "http://www.w4software.com",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-route": "1.4.x",
+    "angular-loader": "1.4.x",
+    "bootstrap": "3.3.x"
+  }
+}

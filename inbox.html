@@ -1,0 +1,30 @@
+<div class="container view-inbox">
+  <h2>Inbox</h2>
+  <table class="table table-hover" ng-if="tasks.length > 0">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Activity</th>
+        <th>Process</th>
+        <th>Ready Date</th>
+        <th>Active Date</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="task in tasks">
+        <td>{{task.identifier.id}}</td>
+        <td>{{task.activityDescriptor.name}}</td>
+        <td>
+          {{task.processInstance.processDescriptor.name}} #{{task.processInstance.identifier.id}}
+          (in {{task.activityIdentifier.processIdentifier.definitionsIdentifier.id}}
+           v{{task.activityIdentifier.processIdentifier.definitionsIdentifier.version}})</td>
+        <td>{{task.readyDate  | date : 'dd/MM/yyyy' }}</td>
+        <td>{{task.activeDate | date : 'dd/MM/yyyy' }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="table-no-data" ng-if="tasks.length == 0">
+  	You have no task to do right now. Why not taking a breath?
+  </div>
+</div>
